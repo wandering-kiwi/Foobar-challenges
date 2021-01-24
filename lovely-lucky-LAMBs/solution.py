@@ -1,12 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Nov 25 07:31:16 2020
-
-@author: avni_aaron
-"""
-
-
 def fib(n):
     if n == 0 or n == 1:
         return 1
@@ -23,6 +14,4 @@ def answer(total_lambs):
     while sum(min_lst) >= total_lambs:
         min_lst.append(fib(i))
         i += 1
-    # max_lst.pop(-1)
-    # min_lst.pop(-1)
     return len(min_lst) - len(max_lst)
